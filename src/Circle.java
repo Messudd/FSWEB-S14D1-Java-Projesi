@@ -10,7 +10,13 @@ public class Circle {
         return  radius;
     }
     public double getArea() {
-        return  Math.sqrt(radius)* PI;
+        return  Math.pow(radius,2)* PI;
     }
 
+    @Override
+    public String toString() {
+        return "Circle {"+
+                "radius = "+ radius +
+               "Area =" + getRadius() + "}";
+    }
 }
