@@ -19,5 +19,21 @@ public class Main {
         System.out.println("cuboid.area= " + cuboid.getArea());
         System.out.println("cuboid.height= " + cuboid.getHeight());
         System.out.println("cuboid.volume= " + cuboid.getVolume());
+        System.out.println("**************************************");
+        System.out.println("**************************************");
+        JuniorDeveloper juniorMesud = new JuniorDeveloper(1000,"Mesud",25000);
+        JuniorDeveloper juniorFurkan = new JuniorDeveloper(1050,"Furkan",25000);
+        MidDeveloper midOnur = new MidDeveloper(1200,"Onur",30000);
+        SeniorDeveloper seniorOguz = new SeniorDeveloper(1500,"Oguz",45000);
+        HRManager hrManager = new HRManager(2000,"Arif",50000,5);
+
+        hrManager.addEmployee(juniorMesud,4);
+        hrManager.addEmployee(juniorFurkan,0);
+        hrManager.addEmployee(seniorOguz,2);
+        hrManager.addEmployee(midOnur,1);
+        System.out.println(hrManager);
+
+
     }
+
 }
